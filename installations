@@ -1,0 +1,145 @@
+npm init -y
+npm install express
+npm install nodemon
+npm install mongodb
+npm install mongoose
+npm i cors
+npm install --save react-toastify
+npm install bcrypt
+npm install jsonwebtoken
+npm install dotenv
+npm install multer
+npm install cloudinary
+
+https://cloudinary.com/users/register_free
+
+INTRODUCTION TO NODE.JS
+-Created in 2009 by Ryan Dahl
+-created to fix limitations to traditonal web servers
+- Problems such as memory issues, time it takes to fetch data i.e
+(read and write operations) e.t.c
+- Reason why Asynchronous operation was developed
+
+KEY REASONS TO USE NODE.JS
+- JavaScript Everywhere: You don't have to change to new language
+- Asynchronous Operations: Helps you to handle multiple tasks simultaneously 
+- Rich Ecosystem: You can get enough help online
+- Scalable
+-
+
+ASYNCHRONOUS NATURE OF NODEJS
+-This simply means ability to perform multiple tasks simultenously 
+
+BASIC NODE.JS CONCEPTS
+- Modules: Resuseable pieces of codes
+- Event-driven architecture: Allows you to perform multiple tasks
+- npm(Node package Manager): install libaries, saves time and effort.
+
+SETTING NODE.JS ENVIRONMENT
+- Download Node
+- install Node
+- Verify installation (node --version)
+
+
+EXPRESS JS
+- It's used specifically for making building Web Application easy
+- Express.js is made from Nodejs
+
+
+SETTING UP EXPRESS JS
+- initialise node (npm init -y)
+- Install Express (npm install express)
+-
+
+CREATING ROUTES AND HANDLING HTTPS REQUEST
+
+      HTTP - Hypertext Transfer Protocol
+
+- ROUTES are paths to handle request and responses
+- HTTP request are more like visiting a website in your browser
+- HTTP response is what you get back from the server in your 
+
+TYPES OF HTTP REQUEST
+- GET - You fetch data with this request from a server
+- POST - used to submit data to the server
+- PUT - we use it to update resource on the server
+- DELETE - We use this to delete a resource from the server
+
+ANATOMY OF HTTP REQUEST
+- URL - Helps you to specify the address of the resource you want to access
+- METHOD - Specifies the type of request (GET, POST, PUT, DELETE)
+- Headers - additional information about the request e.g content-Type
+- BODY: Contains the data to be sent to the server(JSON e.t.c)
+
+
+HANDLING HTTP REQUEST IN WEB APPLICATION
+- 
+
+
+INSTALLATIONS
+
+
+
+CRUDE OPERATION
+
+C - CREATE = POST
+R - READ = GET
+U - UPDATE = PUT
+D - DELETE = DELETE
+
+
+
+INDEX.JS <=== PRODUCT.ROUTE.JS <==== PRODUCT.CONROLLER.JS (actions to perform) <=== 
+
+PRODUCT.JS (MODEL)
+
+
+
+
+
+
+#### Introduction
+
+RESTful APIs, or Representational State Transfer APIs, are a common method of communication between systems. They are a medium for two computers to communicate over HTTP (Hypertext Transfer Protocol), in the same way clients and servers communicate. They are designed to take advantage of existing protocols, and they can be used efficiently for communication between different systems, such as between a client and a server. 
+
+#### Principles of RESTful API Design
+
+RESTful API design is guided by several key principles:
+
+1. **Separation of client and server responsibilities**: This allows each side to be implemented independently of the other. The server-side code (the API) and the client-side code can each be changed without affecting the other, as long as both continue to communicate in the same format.
+
+2. **Uniform interface**: This is fundamental to the design of any RESTful web service. It indicates that the server transfers information in a standard format. The formatted resource is called a representation in REST.
+
+3. **Stateless interactions**: Each request from a client to a server must contain all the information needed to understand and process the request. The server should not store anything about the latest HTTP request the client made. The client is responsible for maintaining the state of the application.
+
+4. **Cacheable responses**: RESTful web services control caching by using API responses that define themselves as cacheable or non-cacheable. This can help improve performance.
+
+5. **Consistent and meaningful resource naming**: Use nouns in endpoint paths. For example, use GET/datasource or POST/articles. This makes request formation more intuitive for designers.
+
+#### Defining API Endpoints and Resources
+
+When designing a REST API, the first step is to identify the objects that will be presented as resources. Once you have your resources defined, you need to identify what actions apply to them and how those would map to your API. RESTful principles provide strategies to handle CRUD (Create, Read, Update, Delete) actions using HTTP methods mapped as follows:
+
+- **GET /resource**: Retrieves a list of resources.
+- **GET /resource/id**: Retrieves a specific resource.
+- **POST /resource**: Creates a new resource.
+- **PUT /resource/id**: Updates a specific resource.
+- **DELETE /resource/id**: Deletes a specific resource.
+
+For example, if you have an employee resource, your API endpoints could look like this:
+
+- **GET /employees**: Retrieves a list of employees.
+- **GET /employees/1234**: Retrieves the employee with ID 1234.
+- **POST /employees**: Creates a new employee.
+- **PUT /employees/1234**: Updates the employee with ID 1234.
+- **DELETE /employees/1234**: Deletes the employee with ID 1234.
+
+#### API Versioning and Documentation
+
+APIs are frequently versioned to avoid compatibility difficulties. However, old endpoints remain alive, increasing effort due to the maintenance of numerous APIs. When you make REST APIs available this way, you are not forcing clients to migrate to the new versions in case they choose not to.
+
+Good documentation is crucial for the usability of your API. When you make a REST API, you need to help clients (consumers) learn and figure out how to use it correctly. The best way to do this is by providing good documentation for the API. This documentation should be clear, concise, and include examples of how to use the API endpoints.
+
+#### Conclusion
+
+Designing and implementing RESTful APIs involves understanding and applying key principles, defining clear and intuitive endpoints and resources, managing versions, and providing comprehensive documentation. By following these guidelines, you can create APIs that are easy to use, efficient, and effective in facilitating communication between systems.
